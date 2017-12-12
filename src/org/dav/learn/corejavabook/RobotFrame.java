@@ -45,7 +45,7 @@ public class RobotFrame extends JFrame
 					int width = currentScreen.getDisplayMode().getWidth();
 					int height = currentScreen.getDisplayMode().getHeight();
 					
-					Robot robot new Robot(currentScreen);
+					Robot robot = new Robot(currentScreen);
 					//robot.waitForIdle();
 					BufferedImage image = robot.createScreenCapture(new Rectangle(0, 0, width - 1, height - 1));
 					
